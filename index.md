@@ -6,23 +6,9 @@
 <summary>
 Why does this exist?
 </summary>
-Single sign-on (SSO) is a mechanism for outsourcing the authentication for your website (or other product) to a third party identity provider, such as Google, Azure AD, Okta, PingFederate, etc.
-
-In this context, SSO refers to a SaaS or similar vendor allowing a business client to manage user accounts via the client's own identity provider, without having to rely on the vendor to provide strong authentication with audit logs, and with the ability to create and delete user accounts centrally, for all users, across all software in use by that client.
-
-For organizations with more than a handful of employees, this feature is critical for IT and Security teams to be able to effectively manage user accounts across dozens or hundreds of vendors, many of which don't support features like TOTP 2FA or U2F. In the event that an employee leaves the company, it allows the IT team to immediately disable their access to all applications, rather than logging into 100 different user management portals.
-
-In short: SSO is a core security requirement for any company with more than five employees.
-
-SaaS vendors appear not to have received this message, however. SSO is often only available as part of "Enterprise" pricing, which assumes either a huge number of users (minimum seat count) or is force-bundled with other "Enterprise" features which may have no value to the company using the software.
-
-If companies claim to "take your security seriously", then SSO should be available as a feature that is either:
-
-1. part of the core product, or
-1. an optional paid extra for a reasonable delta, or
-1. attached to a price tier, but with a reasonably small gap between the non-SSO tier and SSO tiers.
-
-Many vendors charge 2x, 3x, or 4x the base product pricing for access to SSO, which disincentivizes its use and encourages poor security practices.
+Summary to be written.
+	
+In short, US DoD Defense Contractors who have the requirements to implement NIST SP 800-171 on their Covered Contractor Information Systems must use FIPS 140 Validated Cryptography when protecting the confidentiality of Controlled Unclassified Information (CUI). Many Applications break when such cryptography is enforced, and many vendors charge a surcharge or hide this cryptography under a premium license.
 </details>
 
 {% assign all = site.vendors | sort: "name" %}
@@ -40,7 +26,7 @@ Many vendors charge 2x, 3x, or 4x the base product pricing for access to SSO, wh
 
 <table class="sortable">
 <thead>
-<tr><th>Vendor</th><th>Base Pricing</th><th>SSO Pricing</th><th>% Increase</th><th>Source</th><th>Date Updated</th></tr>
+<tr><th>Vendor</th><th>Base Pricing</th><th>FIPS Pricing</th><th>% Increase</th><th>Source</th><th>Date Updated</th></tr>
 </thead>
 <tbody>
 {% for vendor in vendors %}
@@ -64,11 +50,11 @@ Many vendors charge 2x, 3x, or 4x the base product pricing for access to SSO, wh
 </table>
 
 ## The Other List ##
-Some vendors simply do not list their pricing for SSO because the pricing is negotiated with an account manager. These vendors get their own table as we assume they apply a significant premium for SSO.
+Some vendors simply do not list their pricing for FIPS because the pricing is negotiated with an account manager. These vendors get their own table as we assume they apply a significant premium for FIPS.
 
 <table class="sortable">
 <thead>
-<tr><th>Vendor</th><th>Base Pricing</th><th>SSO Pricing</th><th>% Increase</th><th>Source</th><th>Date Updated</th></tr>
+<tr><th>Vendor</th><th>Base Pricing</th><th>FIPS Pricing</th><th>% Increase</th><th>Source</th><th>Date Updated</th></tr>
 </thead>
 <tbody>
 {% for vendor in call_us %}
@@ -130,9 +116,9 @@ That's the point. Decouple your security features from your value-added services
 
 <details>
 <summary>
-But it costs money to provide SAML support, so we can't offer it for free!
+But it costs money to get FIPS Validation, so we can't offer it for free!
 </summary>
-  While I'd like people to really consider it a <em>bare minimum</em> feature for business SaaS, I'm OK with it costing a little extra to cover maintenance costs. If your SSO support is a 10% price hike, you're not on this list. But these percentage increases are not maintenance costs, they're revenue generation because you know your customers have no good options.
+  TBD
 </details>
 
 ## Footnotes
