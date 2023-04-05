@@ -1,6 +1,5 @@
 title: The FIPS Wall of Shame
-description: >-
-  A list of vendors who treat FIPS cryptography as a luxury feature, not a core security requirment.
+description: A list of vendors who treat FIPS cryptography as a luxury feature, not a core security requirement.
 
 url: https://jscholefield.github.io/fips-tax-wall-of-shame
 
