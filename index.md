@@ -27,7 +27,7 @@ Vendors listed here have programs/products that break in significant manners whe
 
 <table class="sortable">
 <thead>
-<tr><th>Vendor</th><th>Base Pricing</th><th>FIPS Pricing</th><th>% Increase</th><th>Source</th><th>Date Updated</th></tr>
+<tr><th>Vendor</th><th>Base Pricing</th><th>% Increase</th><th>Source</th><th>Date Updated</th></tr>
 </thead>
 <tbody>
 {% for vendor in vendors %}
@@ -61,6 +61,7 @@ Some vendors simply do not list their pricing for FIPS because the pricing is ne
 <tr>
 <td markdown="span"><a href="{{ vendor.vendor_url }}">{{ vendor.name }}</a></td>
 <td markdown="span">{{ vendor.base_pricing }}</td>
+<td markdown="span">{{ vendor.sso_pricing }}</td>
 <td markdown="span">{{ vendor.percent_increase }}</td>
 <td>
 {% for source in vendor.pricing_source %}
