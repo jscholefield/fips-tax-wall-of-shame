@@ -22,7 +22,8 @@ In short, US DoD Defense Contractors who have the requirements to implement NIST
 	{% endif %}
 {% endfor %}
 
-## The List
+## Applications that break while utilizing FIPS
+Vendors listed here have programs/products that break in significant manners when FIPS cryptography is enabled on a host machine. 
 
 <table class="sortable">
 <thead>
@@ -33,7 +34,6 @@ In short, US DoD Defense Contractors who have the requirements to implement NIST
 <tr>
 <td markdown="span"><a href="{{ vendor.vendor_url }}">{{ vendor.name }}</a></td>
 <td markdown="span">{{ vendor.base_pricing }}</td>
-<td markdown="span">{{ vendor.sso_pricing }}</td>
 <td markdown="span">{{ vendor.percent_increase }}</td>
 <td>
 {% for source in vendor.pricing_source %}
@@ -49,7 +49,7 @@ In short, US DoD Defense Contractors who have the requirements to implement NIST
 </tbody>
 </table>
 
-## The Other List ##
+## Vendors that charge a premium for FIPS ##
 Some vendors simply do not list their pricing for FIPS because the pricing is negotiated with an account manager. These vendors get their own table as we assume they apply a significant premium for FIPS.
 
 <table class="sortable">
@@ -61,7 +61,6 @@ Some vendors simply do not list their pricing for FIPS because the pricing is ne
 <tr>
 <td markdown="span"><a href="{{ vendor.vendor_url }}">{{ vendor.name }}</a></td>
 <td markdown="span">{{ vendor.base_pricing }}</td>
-<td markdown="span">{{ vendor.sso_pricing }}</td>
 <td markdown="span">{{ vendor.percent_increase }}</td>
 <td>
 {% for source in vendor.pricing_source %}
