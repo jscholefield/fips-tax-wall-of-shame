@@ -1,0 +1,8 @@
+---
+base_pricing: X
+name: AutoDesk
+percent_increase: 0%
+pricing_source: https://www.autodesk.com
+sso_pricing: X
+updated_at: 2024-10-30
+vendor_url: https://www.autodesk.com/support/technical/article/caas/sfdcarticles/sfdcarticles/Does-Vault-Support-the-FIPS-protocol.html
